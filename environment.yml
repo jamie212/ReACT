@@ -1,0 +1,21 @@
+name: ReACT
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pytorch=1.13.1
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.6
+  - pip
+  - pip:
+    - opencv-python
+    - natsort
+    - imageio
+    - scipy
+    - scikit-image
+    - tqdm
+    - matplotlib
+    - pytorch-fid
