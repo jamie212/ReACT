@@ -51,15 +51,9 @@ def xdog(img,sigma=0.5,k=1.6, gamma=1,epsilon=1,phi=1):
 
 
 if __name__ == '__main__':
-	# img = cv2.imread('imgs/rapela.jpg',cv2.IMREAD_GRAYSCALE)
-	# img = cv2.resize(img,(400,400))
-	# k = 1.6
-	# cv2.imwrite("XDoG_Project_1.jpg", np.uint8(xdog(img, sigma=0.4, k=1.6, gamma=0.5, epsilon=-0.5, phi=10)))
 	source_folder = 'DATA_PATH'
 	target_folder = 'SKETCH_PATH'
 
-	# subfolders = ['1_1', '1_2', '1_3', '1_4', '1_5', '1_6']
-	# subfolders = ['test_large', 'test_small', 'train_large', 'train_small']
 	subfolders = ['v1']
 	for subfolder in subfolders:
 		subfolder_path = os.path.join(source_folder, subfolder)
